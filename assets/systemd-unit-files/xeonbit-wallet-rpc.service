@@ -1,0 +1,14 @@
+[Unit]
+Description=Xeonbit Wallet RPC
+After=network.target xeonbitd.service
+
+[Service]
+User=xeonbitservices
+Group=xeonbitservices
+WorkingDirectory=/opt/xeonbit-wallets
+Type=simple
+ExecStart=/opt/xeonbit-bin/xeonbit-wallet-rpc --wallet-file /opt/xeonbit-wallets/woocommerce --rpc-bind-port 18881 --password-file /opt/xeonbit-wallets/woocommerce.password --disable-rpc-login --log-file /var/log/xeonbit-wallet.log
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

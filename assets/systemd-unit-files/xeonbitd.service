@@ -1,0 +1,14 @@
+[Unit]
+Description=Xeonbit Full Node
+After=network.target
+
+[Service]
+User=xeonbitservices
+Group=xeonbitservices
+WorkingDirectory=/opt/xeonbit-data-dir
+Type=simple
+LimitNOFILE=65535
+ExecStart=/usr/bin/xeonbitd --log-file /var/log/xeonbitd.log --data-dir /opt/xeonbit-data-dir --non-interactive
+Restart=always
+[Install]
+WantedBy=multi-user.target
