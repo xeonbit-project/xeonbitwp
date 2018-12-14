@@ -249,7 +249,8 @@ class Xeonbit_Gateway extends WC_Payment_Gateway
 
         // Get Live Price
         $currencies = implode(',', self::$currencies);
-        $api_link = 'https://min-api.cryptocompare.com/data/price?fsym=XNB&tsyms='.$currencies.'&extraParams=xeonbit_woocommerce';
+        //$api_link = 'https://min-api.cryptocompare.com/data/price?fsym=XNB&tsyms='.$currencies.'&extraParams=xeonbit_woocommerce';
+        $api_link = 'https://api.coingecko.com/api/v3/coins/xeonbit/tickers/';
         $curl = curl_init();
         curl_setopt_array($curl, array(
             CURLOPT_RETURNTRANSFER => 1,
