@@ -250,7 +250,7 @@ class Xeonbit_Gateway extends WC_Payment_Gateway
         // Get Live Price
         $currencies = implode(',', self::$currencies);
         //$api_link = 'https://min-api.cryptocompare.com/data/price?fsym=XNB&tsyms='.$currencies.'&extraParams=xeonbit_woocommerce';
-        $api_link = 'https://api.coingecko.com/api/v3/coins/xeonbit/tickers/';
+        $api_link = 'https://api.coingecko.com/api/v3/coins/xeonbit';
         $curl = curl_init();
         curl_setopt_array($curl, array(
             CURLOPT_RETURNTRANSFER => 1,
@@ -260,9 +260,9 @@ class Xeonbit_Gateway extends WC_Payment_Gateway
         curl_close($curl);
         $price = json_decode($resp, true);
 
-        if(!isset($price['Response']) || $price['Response'] != 'Error') {
+        if(!isset($price['market_data']['current_price']) || $price['market_data']['current_price'] != 'Error') {
             $table_name = $wpdb->prefix.'xeonbit_gateway_live_rates';
-            foreach($price as $currency=>$rate) {
+            foreach($price['market_data']['current_price'] as $currency=>$rate) {
                 // shift decimal eight places for precise int storage
                 $rate = intval($rate * 1e8);
                 $query = $wpdb->prepare("INSERT INTO $table_name (currency, rate, updated) VALUES (%s, %d, NOW()) ON DUPLICATE KEY UPDATE rate=%d, updated=NOW()", array($currency, $rate, $rate));
