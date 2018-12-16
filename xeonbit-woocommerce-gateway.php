@@ -193,7 +193,7 @@ function xeonbit_init() {
     
     // [xnb-accepted-here]
     function xnb_accepted_func() {
-        return '<img src="'.XEONBIT_GATEWAY_PLUGIN_URL.'assets/images/xnb-accepted-here.jpg" />';
+        return '<img src="'.XEONBIT_GATEWAY_PLUGIN_URL.'assets/images/XNB-accepted-here.jpg" />';
     }
     add_shortcode('xnb-accepted-here', 'xnb_accepted_func');
 
