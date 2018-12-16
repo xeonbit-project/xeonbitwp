@@ -190,6 +190,12 @@ function xeonbit_init() {
         return '<img src="'.XEONBIT_GATEWAY_PLUGIN_URL.'assets/images/xeonbit-accepted-here.png" />';
     }
     add_shortcode('xeonbit-accepted-here', 'xeonbit_accepted_func');
+    
+    // [xnb-accepted-here]
+    function xnb_accepted_func() {
+        return '<img src="'.XEONBIT_GATEWAY_PLUGIN_URL.'assets/images/xnb-accepted-here.jpg" />';
+    }
+    add_shortcode('xnb-accepted-here', 'xnb_accepted_func');
 
 }
 
