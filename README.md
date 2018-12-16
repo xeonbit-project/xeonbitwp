@@ -15,12 +15,12 @@
 
 ## Requirements
 
-* Xeonbit wallet to receive payments - [GUI](https://github.com/xeonbit-project/xeonbit-gui/releases) - [CLI](https://github.com/xeonbit-project/xeonbit/releases) - [Paper](https://xeonbitaddress.org/)
+* Xeonbit wallet to receive payments - [GUI](https://github.com/xeonbit-project/xeonbit-gui/releases) - [CLI](https://github.com/xeonbit-project/xeonbit/releases) - [Paper]
 * [BCMath](http://php.net/manual/en/book.bc.php) - A PHP extension used for arbitrary precision maths
 
 ## Installing the plugin
 
-* Download the plugin from the [releases page](https://github.com/xeonbit-integrations/xeonbitwp) or clone with `git clone https://github.com/xeonbit-integrations/xeonbitwp`
+* Download the plugin from the [releases page](https://github.com/xeonbit-project/xeonbitwp) or clone with `git clone https://github.com/xeonbit-project/xeonbitwp`
 * Unzip or place the `xeonbit-woocommerce-gateway` folder in the `wp-content/plugins` directory.
 * Activate "Xeonbit Woocommerce Gateway" in your WordPress admin dashboard.
 * It is highly recommended that you use native cronjobs instead of WordPress's "Poor Man's Cron" by adding `define('DISABLE_WP_CRON', true);` into your `wp-config.php` file and adding `* * * * * wget -q -O - https://yourstore.com/wp-cron.php?doing_wp_cron >/dev/null 2>&1` to your crontab.
@@ -43,7 +43,7 @@ The most secure way to accept Xeonbit on your website. You'll need:
 * Root access to your webserver
 * Latest [Xeonbit-currency binaries](https://github.com/xeonbit-project/xeonbit/releases)
 
-After downloading (or compiling) the Xeonbit binaries on your server, install the [systemd unit files](https://github.com/xeonbit-integrations/xeonbitwp/tree/master/assets/systemd-unit-files) or run `xeonbitd` and `xeonbit-wallet-rpc` with `screen` or `tmux`. You can skip running `xeonbitd` by using a remote node with `xeonbit-wallet-rpc` by adding `--daemon-address node.xeonbitworld.com:18889` to the `xeonbit-wallet-rpc.service` file.
+After downloading (or compiling) the Xeonbit binaries on your server, install the [systemd unit files](https://github.com/xeonbit-project/xeonbitwp/tree/master/assets/systemd-unit-files) or run `xeonbitd` and `xeonbit-wallet-rpc` with `screen` or `tmux`. You can skip running `xeonbitd` by using a remote node with `xeonbit-wallet-rpc` by adding `--daemon-address node.xeonbitworld.com:18889` to the `xeonbit-wallet-rpc.service` file.
 
 Note on security: using this option, while the most secure, requires you to run the Xeonbit wallet RPC program on your server. Best practice for this is to use a view-only wallet since otherwise your server would be running a hot-wallet and a security breach could allow hackers to empty your funds.
 
