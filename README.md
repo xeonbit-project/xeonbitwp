@@ -99,7 +99,11 @@ This will display a badge showing that you accept Xeonbit-currency.
 `[xeonbit-accepted-here]`
 
 ![Xeonbit Accepted Here](/assets/images/xeonbit-accepted-here.png?raw=true "Xeonbit Accepted Here")
-![Xeonbit Accepted Here](/assets/images/XNB-accepted-here.jpg?raw=true "XNB Accepted Here")
+
+`[xnb-accepted-here]`
+
+![XNB Accepted Here](/assets/images/XNB-accepted-here.jpg?raw=true "XNB Accepted Here")
+
 ## Donations
 
 xeonbit-integrations: WcBv3auD1aPE1P13bnV4PwP5bYfn4WUC5N47SgfRbVC4VZh1r347j5hF3RnVusFhQxBmR6jasBhW6AuCFA8QKNkE1LAfBrKaW
