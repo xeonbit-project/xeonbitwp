@@ -1,7 +1,7 @@
 <?php
 /*
  * Main Gateway of Xeonbit using either a local daemon or the explorer
- * Authors: Serhack, cryptochangements, mosu-forge
+ * Authors: Serhack, cryptochangements, mosu-forge, Coinsman
  */
 
 defined( 'ABSPATH' ) || exit;
