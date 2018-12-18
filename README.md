@@ -43,7 +43,7 @@ The most secure way to accept Xeonbit on your website. You'll need:
 * Root access to your webserver
 * Latest [Xeonbit-currency binaries](https://github.com/xeonbit-project/xeonbit/releases)
 
-After downloading (or compiling) the Xeonbit binaries on your server, install the [systemd unit files](https://github.com/xeonbit-project/xeonbitwp/tree/master/assets/systemd-unit-files) or run `xeonbitd` and `xeonbit-wallet-rpc` with `screen` or `tmux`. You can skip running `xeonbitd` by using a remote node with `xeonbit-wallet-rpc` by adding `--daemon-address node.xeonbitworld.com:18889` to the `xeonbit-wallet-rpc.service` file.
+After downloading (or compiling) the Xeonbit binaries on your server, install the [systemd unit files](https://github.com/xeonbit-project/xeonbitwp/tree/master/assets/systemd-unit-files) or run `xeonbitd` and `xeonbit-wallet-rpc` with `screen` or `tmux`. You can skip running `xeonbitd` by using a remote node with `xeonbit-wallet-rpc` by adding `--daemon-address pool.xeonbit.com:18881` to the `xeonbit-wallet-rpc.service` file.
 
 Note on security: using this option, while the most secure, requires you to run the Xeonbit wallet RPC program on your server. Best practice for this is to use a view-only wallet since otherwise your server would be running a hot-wallet and a security breach could allow hackers to empty your funds.
 
