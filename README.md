@@ -29,7 +29,7 @@
 
 This is the easiest way to start accepting Xeonbit on your website. You'll need:
 
-* Your Xeonbit wallet address starting with `4`
+* Your Xeonbit wallet address starting with `W`
 * Your wallet's secret viewkey
 
 Then simply select the `viewkey` option in the settings page and paste your address and viewkey. You're all set!
