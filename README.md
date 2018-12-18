@@ -34,7 +34,7 @@ This is the easiest way to start accepting Xeonbit on your website. You'll need:
 
 Then simply select the `viewkey` option in the settings page and paste your address and viewkey. You're all set!
 
-Note on privacy: when you validate transactions with your private viewkey, your viewkey is sent to (but not stored on) xmrchain.net over HTTPS. This could potentially allow an attacker to see your incoming, but not outgoing, transactions if they were to get his hands on your viewkey. Even if this were to happen, your funds would still be safe and it would be impossible for somebody to steal your money. For maximum privacy use your own `xeonbit-wallet-rpc` instance.
+Note on privacy: when you validate transactions with your private viewkey, your viewkey is sent to (but not stored on) explorer.xeonbit.com over HTTPS. This could potentially allow an attacker to see your incoming, but not outgoing, transactions if they were to get his hands on your viewkey. Even if this were to happen, your funds would still be safe and it would be impossible for somebody to steal your money. For maximum privacy use your own `xeonbit-wallet-rpc` instance.
 
 ## Option 2: Using `xeonbit-wallet-rpc`
 
